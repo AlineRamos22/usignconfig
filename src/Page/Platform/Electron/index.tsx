@@ -1,0 +1,26 @@
+import * as React from 'react';
+import Typography from '@mui/material/Typography';
+import Stack from '@mui/material/Stack';
+import Switch from '@mui/material/Switch';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+
+export default function AdditionalSettings() {
+    return (
+        <React.Fragment>
+            <CssBaseline />
+            <Box sx={{ p: 1 }}>
+                <Stack>
+                    <Typography>
+                        Auto Start <Switch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
+                    </Typography>
+
+                    <Typography>
+                        Aceleração de Hardware
+                        <Switch defaultChecked inputProps={{ 'aria-label': 'ant design' }} />
+                    </Typography>
+                </Stack>
+            </Box>
+        </React.Fragment>
+    );
+}
